@@ -1,10 +1,10 @@
 class Car
-  attr_accessor :make_model, :monthly_payment, :loan_length, :color
+  attr_accessor :make_model, :monthly_payment, :loan_length, :color, :make, :model, :total_cost
   
   def initialize(make_model, monthly_payment, loan_length)
     @make_model = "#{make} + #{model}"
-    @monthly_payment = 1500
-    @loan_length = 36
+    @monthly_payment = monthly_payment
+    @loan_length = loan_length
     @color = nil
   end
 
