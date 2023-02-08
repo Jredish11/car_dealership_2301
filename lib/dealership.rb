@@ -15,4 +15,10 @@ class Dealership
   def inventory_count
     @inventory.length
   end
+
+  def has_inventory?
+    if @inventory = []
+      false
+    end
+  end
 end
